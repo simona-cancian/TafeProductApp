@@ -9,6 +9,7 @@ namespace ProductApps
     class Product
     {
         const int deliveryCharge = 25;
+        const int wrapCharge = 5;
 
         private decimal price;
         private int quantity;
@@ -18,6 +19,7 @@ namespace ProductApps
         private decimal gst;
 
         private decimal afterDeliveryCharge;
+        private decimal afterWrappingCharge;
 
         private decimal Price
         {
@@ -63,6 +65,13 @@ namespace ProductApps
             set { afterDeliveryCharge = value; }
         }
 
+        public decimal AfterWrappingCharge
+        {
+            get { return afterWrappingCharge; }
+            set { afterWrappingCharge = value; }
+        }
+
+
         //Constructor for Product
         public Product(decimal price, int quantity)
         {
@@ -75,6 +84,7 @@ namespace ProductApps
         {
             TotalPayment = Price * Quantity;
             AfterDeliveryCharge = (Price * Quantity) + deliveryCharge;
+            AfterWrappingCharge = afterDeliveryCharge + wrapCharge;
         }
     }
 }
