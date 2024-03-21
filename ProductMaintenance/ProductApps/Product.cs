@@ -20,6 +20,7 @@ namespace ProductApps
 
         private decimal afterDeliveryCharge;
         private decimal afterWrappingCharge;
+        private decimal afterGST;
 
         private decimal Price
         {
@@ -71,6 +72,12 @@ namespace ProductApps
             set { afterWrappingCharge = value; }
         }
 
+        public decimal AfterGST
+        {
+            get { return afterGST; }
+            set { afterGST = value; }
+        }
+
 
         //Constructor for Product
         public Product(decimal price, int quantity)
@@ -82,9 +89,11 @@ namespace ProductApps
         //Calculate the total payment
         public void calTotalPayment()
         {
+            gst = 1.1m;
             TotalPayment = Price * Quantity;
             AfterDeliveryCharge = (Price * Quantity) + deliveryCharge;
             AfterWrappingCharge = afterDeliveryCharge + wrapCharge;
+            AfterGST = afterWrappingCharge * gst;
         }
     }
 }

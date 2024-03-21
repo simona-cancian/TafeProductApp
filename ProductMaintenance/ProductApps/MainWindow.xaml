@@ -3,21 +3,23 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        <Label Content="Product:" HorizontalAlignment="Left" Height="30" Margin="46,37,0,0" VerticalAlignment="Top" Width="61"/>
-        <Label Content="Price $:" HorizontalAlignment="Left" Height="30" Margin="46,78,0,0" VerticalAlignment="Top" Width="61"/>
-        <Label Content="Quantity:" HorizontalAlignment="Left" Height="30" Margin="48,113,0,0" VerticalAlignment="Top" Width="69" RenderTransformOrigin="0.371,0.498"/>
-        <Label Content="Total Payment $:" HorizontalAlignment="Left" Height="30" Margin="46,160,0,0" VerticalAlignment="Top" Width="96"/>
-        <TextBlock Name="totalPaymentTextBlock" HorizontalAlignment="Left" Height="23" Margin="164,167,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="75"/>
-        <TextBox Name="productTextBox" HorizontalAlignment="Left" Height="24" Margin="122,37,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="96"/>
-        <TextBox Name="priceTextBox" HorizontalAlignment="Left" Height="24" Margin="122,78,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="77"/>
-        <TextBox x:Name="quantityTextBox" HorizontalAlignment="Left" Height="24" Margin="122,119,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="77"/>
+        <Label Content="Product:" HorizontalAlignment="Left" Height="30" Margin="48,19,0,0" VerticalAlignment="Top" Width="61"/>
+        <Label Content="Price $:" HorizontalAlignment="Left" Height="30" Margin="48,54,0,0" VerticalAlignment="Top" Width="61"/>
+        <Label Content="Quantity:" HorizontalAlignment="Left" Height="30" Margin="44,84,0,0" VerticalAlignment="Top" Width="69" RenderTransformOrigin="0.371,0.498"/>
+        <Label Content="Total Payment $:" HorizontalAlignment="Left" Height="30" Margin="17,119,0,0" VerticalAlignment="Top" Width="96"/>
+        <TextBlock Name="totalPaymentTextBlock" HorizontalAlignment="Left" Height="23" Margin="143,119,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="75"/>
+        <TextBox Name="productTextBox" HorizontalAlignment="Left" Height="24" Margin="122,22,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="96"/>
+        <TextBox Name="priceTextBox" HorizontalAlignment="Left" Height="24" Margin="122,51,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="77"/>
+        <TextBox x:Name="quantityTextBox" HorizontalAlignment="Left" Height="24" Margin="122,80,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="77" RenderTransformOrigin="0.472,-0.698"/>
         <Button Name="calculateButton" Content="_Calculate" HorizontalAlignment="Left" Height="37" Margin="327,152,0,0" VerticalAlignment="Top" Width="122" Click="calculateButton_Click"/>
         <Button Name="clearButton" Content="C_lear" HorizontalAlignment="Left" Height="34" Margin="327,209,0,0" VerticalAlignment="Top" Width="122" Click="clearButton_Click"/>
         <Button Name="closeButton" Content="Cl_ose" HorizontalAlignment="Left" Height="34" Margin="327,264,0,0" VerticalAlignment="Top" Width="122" Click="closeButton_Click"/>
-        <Label x:Name="afterDeliveryLabel" Content="Total Charge after Adding &#xA;the delivery charge ($25.00)"  HorizontalAlignment="Left" Margin="16,201,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.007,0.007"/>
-        <TextBox x:Name="totalChargeTextBox" HorizontalAlignment="Left" Margin="213,212,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="73" RenderTransformOrigin="0.283,0.638" Height="19"/>
-        <Label x:Name="afterWrappingLabel" Content="Total Charge after Adding &#xA;the wrap charge ($5.00)"  HorizontalAlignment="Left" Margin="16,256,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.007,0.007"/>
-        <TextBox x:Name="afterWrapTextBox" HorizontalAlignment="Left" Margin="213,272,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="73" RenderTransformOrigin="0.283,0.638" Height="18"/>
+        <Label x:Name="afterDeliveryLabel" Content="Total Charge after Adding &#xA;the delivery charge ($25.00)"  HorizontalAlignment="Left" Margin="12,150,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.007,0.007"/>
+        <TextBox x:Name="totalChargeTextBox" HorizontalAlignment="Left" Margin="203,161,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="73" RenderTransformOrigin="0.283,0.638" Height="19"/>
+        <Label x:Name="afterWrappingLabel" Content="Total Charge after Adding &#xA;the wrap charge ($5.00)"  HorizontalAlignment="Left" Margin="17,197,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.007,0.007"/>
+        <TextBox x:Name="afterWrapTextBox" HorizontalAlignment="Left" Margin="203,209,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="73" RenderTransformOrigin="0.283,0.638" Height="19"/>
+        <Label x:Name="afterGSTLabel" Content="Total Charge after GST @10%"  HorizontalAlignment="Left" Margin="17,244,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.007,0.007"/>
+        <TextBox x:Name="afterGSTTextBox" HorizontalAlignment="Left" Margin="203,248,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="73" RenderTransformOrigin="0.283,0.638" Height="19"/>
 
 
     </Grid>
